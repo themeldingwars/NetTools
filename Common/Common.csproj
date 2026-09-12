@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>The Melding Wars</Company>
+    <Product>NetTools</Product>
+    <Authors>The Melding Wars</Authors>
+    <Copyright>Copyright © 2019-2026 The Melding Wars</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RepositoryUrl>https://github.com/themeldingwars/NetTools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

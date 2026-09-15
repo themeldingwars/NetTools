@@ -58,8 +58,8 @@ namespace Common
                 var time = e.Packet.Timeval.Date;
                 var packet = PacketDotNet.Packet.ParsePacket(e.Packet.LinkLayerType, e.Packet.Data);
                 var ethernetPacket = (PacketDotNet.EthernetPacket)packet;
-                var ipPacket = (PacketDotNet.IPPacket)packet.Extract(typeof(PacketDotNet.IPPacket));
-                var udpPacket = (PacketDotNet.UdpPacket)packet.Extract(typeof(PacketDotNet.UdpPacket));
+                var ipPacket = packet.Extract<PacketDotNet.IPPacket>();
+                var udpPacket = packet.Extract<PacketDotNet.UdpPacket>();
 
                 if (udpPacket == null) { return; }
 
